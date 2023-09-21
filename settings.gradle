@@ -1,1 +1,2 @@
 include ':app', ':privacystreams-android-sdk'
+include ':privacystreams-android-sdk'

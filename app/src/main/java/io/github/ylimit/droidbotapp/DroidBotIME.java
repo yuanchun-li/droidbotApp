@@ -72,7 +72,7 @@ public class DroidBotIME extends InputMethodService {
                 InputConnection ic = getCurrentInputConnection();
                 if (ic == null) return;
 
-                String text = intent.getStringExtra("text");
+                String text = intent.getStringExtra("text").replace("--", " ");
                 int mode = intent.getIntExtra("mode", INPUT_MODE_SET);
                 if (mode == INPUT_MODE_SET) {
                     ic.deleteSurroundingText(10000, 10000);
